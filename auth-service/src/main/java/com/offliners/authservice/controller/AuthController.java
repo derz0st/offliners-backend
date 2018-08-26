@@ -5,12 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
 public class AuthController {
     
-    @GetMapping
+    @GetMapping("/api")
     public String helloWorld() {
         return "Hello, world!";
+    }
+
+    @GetMapping("/public")
+    public String publicEndpoint() {
+        return "Get without OAuth!";
     }
     
 }

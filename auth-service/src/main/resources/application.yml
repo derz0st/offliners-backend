@@ -1,3 +1,18 @@
 spring:
   application:
     name: auth-service
+  main:
+    allow-bean-definition-overriding: true
+    
+security:
+  oauth2:
+    client:
+      clientId: 262556191050486
+      clientSecret: 626fa02be9c9ad7883fc76e799af4fcc
+      accessTokenUri: https://graph.facebook.com/oauth/access_token
+      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://graph.facebook.com/me
