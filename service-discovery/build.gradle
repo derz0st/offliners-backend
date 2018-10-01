@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.1.0.M2'
+		springBootVersion = '2.1.0.M4'
 	}
 	repositories {
 		mavenCentral()
@@ -19,7 +19,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.offliners'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 10
+sourceCompatibility = 11
 
 repositories {
 	mavenCentral()
@@ -29,7 +29,7 @@ repositories {
 
 
 ext {
-	springCloudVersion = 'Finchley.BUILD-SNAPSHOT'
+	springCloudVersion = 'Greenwich.M1'
 }
 
 dependencies {
