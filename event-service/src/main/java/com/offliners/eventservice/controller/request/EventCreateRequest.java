@@ -7,8 +7,6 @@ import javax.validation.constraints.NotEmpty;
 
 @Data
 public class EventCreateRequest {
-    @JsonProperty("id")
-    private String id;
     @NotEmpty
     @JsonProperty("description")
     private String description;
