@@ -1,0 +1,13 @@
+type Comment {
+   id: ID!
+   text: String!
+   authorId: Long!
+}
+
+schema {
+    query: Query
+}
+
+type Query {
+  getComments: [Comment]!
+}

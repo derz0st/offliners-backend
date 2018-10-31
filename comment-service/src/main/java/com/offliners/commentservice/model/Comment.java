@@ -14,7 +14,7 @@ import java.time.ZonedDateTime;
 public class Comment {
     @Id
     @Column(name = "id")
-    private String id;
+    private Long id;
     @Column(name = "text")
     private String text;
     @Column(name = "author_id")
